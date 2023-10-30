@@ -129,7 +129,7 @@ def get_grids(country_map, start, model, scaler, synthetic=True):
             for time in weather:
                 if time not in props:
                     props[time] = []
-                    
+                  .  
                 tfss = time_from_sunset(x, y, time)
                 if tfss < 0:
                     props[time].append(0)
@@ -211,6 +211,7 @@ def main():
     model, scaler = import_model()
     finland, cities = get_map()
 
+    #input Your own dates here
     start = dt.datetime(2023, 8, 15, 18, 0)
     grids = get_grids(finland, start, model, scaler)
 
