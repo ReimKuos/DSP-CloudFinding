@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="/static/css/posts.css">
+
+{% extends "layout.html" %}
+{% block title %}Front Page{% endblock %}
+{% block content %}
+
+<h2>Noctournal cloud forecast</h2>
+<p>
+    Welcome to the Noctournal Cloud Forecast, please state you name, social security number and date of birth
+</p>
+
+<img src="{{ url_for('static', filename='heatmap.jpg') }}" class="image" />
+
+<p>
+    Helsinki: <br>
+    Turku: <br>
+    Vaasa: <br>
+    Kuopio: <br>
+    Joensuu: <br>
+    Oulu: <br>
+    Rovaniemi: <br>
+    Inari: <br>
+    Kajaani: <br>
+    Jyväskylä: <br>
+</p>
+{% endblock %}
