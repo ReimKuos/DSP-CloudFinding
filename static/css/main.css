@@ -51,12 +51,3 @@ img {
     height: 80%;
     object-fit: contain;
 }
-
-.comment {
-    margin: 2px;
-    border: 4px outset black;
-    height: 60px;
-    background-color: white;
-    text-align: left;
-    padding: 10px;
-}
