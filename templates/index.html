@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="/static/css/posts.css">
+<link rel="stylesheet" href="/static/css/main.css">
 
 {% extends "layout.html" %}
 {% block title %}Front Page{% endblock %}
@@ -8,10 +8,22 @@
 <h2>Noctournal cloud forecast</h2>
 <p>
     Welcome to the Noctournal Cloud Forecast. Currently this forecast is not real time
-    but generated for the past summer. This is due to limititations on resources.
+    but generated for the past summer. The maps display the likelyhoods of Noctilucent
+    clouds for Finland for the twilight hours by hour, in the timeframe when the clouds
+    have the possibility to appear.
 </p>
-<img src="{{ url_for('static', filename='picture3.png') }}" class="image" />
-
+<img src="{{ url_for('static', filename='picture1.png') }}" class="image"
+        style="object-fit: contain;
+        width: 450px;
+        height: auto;"/>
+<img src="{{ url_for('static', filename='picture2.png') }}" class="image"
+        style="object-fit: contain;
+        width: 450px;
+        height: auto;"/>
+<img src="{{ url_for('static', filename='picture3.png') }}" class="image"
+        style="object-fit: contain;
+        width: 450px;
+        height: auto;"/>
 
 <h3>What are noctilucent clouds?</h3>
 <p>
@@ -19,7 +31,10 @@
     producing a beautiful light effect by reflecting sunlight that has already gone below the horizon. <br>
     They are one of the few sky phenomenan viewable during the Finnish summer.  
 </p>
-<img src="{{ url_for('static', filename='High_altitude.jpg') }}" class="image" />
+<img src="{{ url_for('static', filename='High_altitude.jpg') }}" class="image"
+        style="object-fit: contain;
+        width: 400px;
+        height: auto;"/>
 
 <p>
     If you are more interested about the phenomenan wikipedia might be a good start. <br>
